@@ -1,0 +1,102 @@
+/* Editorial & Block Display Typography */
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.015em;
+  line-height: 0.96;
+  text-wrap: balance;
+}
+
+.font-editorial {
+  font-family: var(--font-editorial);
+  letter-spacing: -0.01em;
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+.font-mono-label {
+  font-family: var(--font-mono);
+  font-size: clamp(0.72rem, 0.85vw, 0.82rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Giant Display Headings */
+.display-xl {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6.4vw, 5.75rem);
+  line-height: 0.94;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+.display-lg {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 3.85rem);
+  line-height: 0.96;
+  letter-spacing: -0.015em;
+  text-wrap: balance;
+}
+
+.display-md {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+.display-sm {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+  line-height: 1.08;
+  text-wrap: balance;
+}
+
+/* Outlined Display Variants (echoes CASTANEDA logo stroke) */
+.display-outline-white {
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--white);
+}
+
+.display-outline-green {
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--leaf);
+}
+
+.display-outline-dark {
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--black);
+}
+
+.editorial-accent {
+  font-family: var(--font-editorial);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.editorial-numeral {
+  font-family: var(--font-editorial);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+/* Prose */
+.lead-copy {
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 1.35vw, 1.25rem);
+  line-height: 1.62;
+  max-width: 62ch;
+}
+
+.body-copy {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.65;
+  max-width: 68ch;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}

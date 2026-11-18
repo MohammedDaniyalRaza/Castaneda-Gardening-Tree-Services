@@ -1,0 +1,6 @@
+{
+  "name": "Castaneda Gardening & Tree Services",
+  "description": "Gardening, hardscape, concrete, pavers, sod, irrigation, fencing, and tree care across San Jose and Silicon Valley. Free estimates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

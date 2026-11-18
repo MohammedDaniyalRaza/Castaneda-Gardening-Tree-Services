@@ -1,0 +1,67 @@
+:root {
+  /* Core Brand Palette — matched to logo */
+  --black: #0a0c0a;
+  --soot: #121512;
+  --charcoal: #1a1f1a;
+  --deep-forest: #0f3d1c;
+  --forest: #1f6b2e;
+  --leaf: #3fa34d;
+  --light-leaf: #7ccb7a;
+
+  /* Action & Accent */
+  --yellow: #f5c518;
+  --deep-gold: #d9a800;
+
+  /* Light Surfaces & Earth */
+  --white: #ffffff;
+  --paper: #f4f1e8;
+  --paper-warm: #ebe5d5;
+  --bark: #6b4423;
+  --gray: #8a8f88;
+  --gray-dark: #525751;
+
+  /* Hairlines & Borders */
+  --border-dark: rgba(255, 255, 255, 0.14);
+  --border-dark-strong: rgba(255, 255, 255, 0.28);
+  --border-light: rgba(10, 12, 10, 0.14);
+  --border-light-strong: rgba(10, 12, 10, 0.28);
+
+  /* Typography */
+  --font-display: 'Bowlby One', Impact, sans-serif;
+  --font-editorial: 'Gloock', Georgia, serif;
+  --font-body: 'Albert Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'Fragment Mono', monospace;
+
+  /* Layout & Spacing */
+  --container-max: 1320px;
+  --gutter: clamp(16px, 4vw, 48px);
+  --section-pad: clamp(56px, 8vw, 112px);
+  --nav-height: 76px;
+  --mobile-bar-height: 58px;
+
+  /* Radii */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-arch: 120px 120px 14px 14px;
+
+  /* Shadows */
+  --shadow-soft: 0 12px 32px -12px rgba(10, 12, 10, 0.22);
+  --shadow-elevated: 0 24px 54px -16px rgba(10, 12, 10, 0.42);
+
+  /* Easing */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-snap: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  /* Z-index layers */
+  --z-base: 1;
+  --z-sticky: 40;
+  --z-navbar: 100;
+  --z-megamenu: 110;
+  --z-mobile-bar: 120;
+  --z-mobile-menu: 150;
+  --z-cursor: 200;
+  --z-preloader: 500;
+  --z-lightbox: 1000;
+}

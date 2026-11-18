@@ -1,0 +1,128 @@
+/* Layout & Motif Utilities */
+
+.section-pad {
+  padding-block: var(--section-pad);
+}
+
+.section-pad-sm {
+  padding-block: clamp(36px, 5vw, 64px);
+}
+
+/* Gazebo arch image frame motif */
+.gazebo-arch-mask {
+  border-radius: var(--radius-arch);
+  overflow: hidden;
+}
+
+/* Scalloped/stepped organic card frame */
+.garden-frame {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+/* Banner frame motif from logo */
+.banner-ribbon {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--deep-forest);
+  color: var(--yellow);
+  border: 2px solid var(--yellow);
+  border-radius: 999px;
+  padding: 6px 18px;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  box-shadow: inset 0 0 0 1px rgba(10, 12, 10, 0.45);
+}
+
+.banner-ribbon--light {
+  background-color: var(--deep-forest);
+  color: var(--yellow);
+  border-color: var(--deep-gold);
+}
+
+.banner-ribbon__dash {
+  display: inline-block;
+  width: 18px;
+  height: 2px;
+  background-color: var(--yellow);
+  flex-shrink: 0;
+}
+
+/* Hairline dividers */
+.divider-dark {
+  height: 1px;
+  width: 100%;
+  background: var(--border-dark);
+}
+
+.divider-light {
+  height: 1px;
+  width: 100%;
+  background: var(--border-light);
+}
+
+/* Logo black plate so logo looks intentional over any surface */
+.logo-plate {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
+  border: 1px solid rgba(245, 197, 24, 0.28);
+  border-radius: 10px;
+  padding: 4px 10px;
+  flex-shrink: 0;
+}
+
+.logo-plate img {
+  display: block;
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Custom Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr));
+  gap: clamp(16px, 2vw, 24px);
+}
+
+/* Marquee track */
+.marquee-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 28px;
+  animation: marqueeScroll 34s linear infinite;
+}
+
+.marquee-viewport:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+}
